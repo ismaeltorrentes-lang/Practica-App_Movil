@@ -9,10 +9,10 @@
      
 
        <ion-list>
-        <ion-item v-for="usuario in usuarios" :key="usuario.id" :router-link="`/users/${usuario.id}`">
+        <ion-item v-for="usuario in usuarios" :key="usuario.id" :router-link="`/tabs/users/${usuario.id}`">
           <ion-label>
             {{ usuario.name }}
-            <small>{{ usuario.email }}</small>
+            <small>{{ usuario.email }}</small>  
           </ion-label>
         </ion-item>
         
